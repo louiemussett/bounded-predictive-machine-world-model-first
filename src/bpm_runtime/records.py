@@ -83,6 +83,7 @@ class WorldModelRecord(BaseRecord):
 class PredictionRecord(BaseRecord):
     prediction_target: str | None = None
     expected_source: str | None = None
+    expected_signal_type: str | None = None
     expected_features: list[str] = field(default_factory=list)
     match_conditions: list[str] = field(default_factory=list)
     mismatch_conditions: list[str] = field(default_factory=list)
